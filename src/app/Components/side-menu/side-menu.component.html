@@ -1,0 +1,42 @@
+<img class="btnback" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0iTTEyLjYgMTJMOCA3LjRMOS40IDZsNiA2bC02IDZMOCAxNi42eiIvPjwvc3ZnPg==" (click)="alternateVisibilityMenu()" >
+<section class="container" 
+[style.background-color]="theme"
+[style.width]="widthMenu + '%'"
+[style.display]="visibleMenu ? 'flex' : 'none'"
+>
+        <div class="item">
+            <img class="imgprofile" src="https://lh3.googleusercontent.com/a/ACg8ocK_xKZR7KunlkXToiwxFmkxNtMAGT0LFmhrOBhsM_pWTzQK8n5T=s96-c-rg-br100" width="100">
+            <p class="texto">
+                {{userName}}
+            </p>
+            <img class="btnback" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxZW0iIGhlaWdodD0iMWVtIiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGZpbGw9ImN1cnJlbnRDb2xvciIgZD0ibTYuOCAxM2wyLjkgMi45cS4yNzUuMjc1LjI3NS43dC0uMjc1Ljd0LS43LjI3NXQtLjctLjI3NWwtNC42LTQuNnEtLjE1LS4xNS0uMjEzLS4zMjVUMy40MjYgMTJ0LjA2My0uMzc1dC4yMTItLjMyNWw0LjYtNC42cS4yNzUtLjI3NS43LS4yNzV0LjcuMjc1dC4yNzUuN3QtLjI3NS43TDYuOCAxMUgyMHEuNDI1IDAgLjcxMy4yODhUMjEgMTJ0LS4yODguNzEzVDIwIDEzeiIvPjwvc3ZnPg==" (click)="alternateVisibilityMenu()" >
+        </div>
+
+    <div class="item">
+        <span>
+            😊
+        </span> 
+        <p class="texto">
+            Dashboard
+        </p>
+    </div>
+
+    <div class="item">
+        <span>
+            👍
+        </span> 
+        <p class="texto">
+            Profile
+        </p>
+    </div>
+
+    <div class="item">
+        <button class="btn" (click)="setTogglecolor('#51fc7d')">
+            Change color
+        </button>
+        <button class="btn" (click)="setSize()" >
+            Change Size
+        </button>
+    </div>
+
+</section>
